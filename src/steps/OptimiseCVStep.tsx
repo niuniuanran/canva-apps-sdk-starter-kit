@@ -5,6 +5,7 @@ export const OptimiseCVStep: FC = () => {
   return (
     <Rows spacing="2u">
       <Title>Optimise your CV</Title>
+      CV optimize here
     </Rows>
   )
 }
