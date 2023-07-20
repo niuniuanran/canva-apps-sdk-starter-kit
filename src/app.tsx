@@ -6,7 +6,7 @@ import { OptimiseCVStep } from './steps/OptimiseCVStep'
 enum CVStep {
   ImportData,
   SelectTemplate,
-  OptimizeCV,
+  OptimiseCV,
 }
 
 export const App = () => {
@@ -21,10 +21,10 @@ export const App = () => {
     case CVStep.SelectTemplate:
       return (
         <ChooseTemplateStep
-          onTemplateSelected={() => setCurrentStep(CVStep.OptimizeCV)}
+          onTemplateSelected={() => setCurrentStep(CVStep.OptimiseCV)}
         />
       )
-    case CVStep.OptimizeCV:
+    case CVStep.OptimiseCV:
       return <OptimiseCVStep />
   }
 }

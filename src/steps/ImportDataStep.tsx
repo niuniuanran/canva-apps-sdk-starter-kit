@@ -29,7 +29,7 @@ export const ImportDataStep: FC<Step1Props> = ({ onDataImported }) => {
   }
 
   return (
-    <Rows spacing="4u">
+    <Rows spacing="2u">
       <Title>Import your CV data</Title>
       <Rows spacing="1u" align="center">
         <img src={cvUpload} width={100} />
