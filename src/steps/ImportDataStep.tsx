@@ -1,8 +1,8 @@
-import { Rows, Button, Text } from '@canva/app-ui-kit'
+import { Rows, Button, Title } from '@canva/app-ui-kit'
 import React, { useState } from 'react'
 import { FC } from 'react'
-import linkedin from '../assets/images/linkedin300.png'
-import cvUpload from '../assets/images/cv-upload300.png'
+import linkedin from '../../assets/images/linkedin300.png'
+import cvUpload from '../../assets/images/cv-upload300.png'
 
 interface Step1Props {
   onDataImported: () => void
@@ -30,7 +30,7 @@ export const ImportDataStep: FC<Step1Props> = ({ onDataImported }) => {
 
   return (
     <Rows spacing="4u">
-      <Text>1. Import your CV data</Text>
+      <Title>Import your CV data</Title>
       <Rows spacing="1u" align="center">
         <img src={cvUpload} width={100} />
         <Button

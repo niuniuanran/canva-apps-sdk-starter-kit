@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import { ImportDataStep } from './steps/ImportDataStep'
+import { ChooseTemplateStep } from './steps/ChooseTemplateStep'
+import { OptimiseCVStep } from './steps/OptimiseCVStep'
+
 enum CVStep {
   ImportData,
   SelectTemplate,
@@ -16,6 +19,12 @@ export const App = () => {
         />
       )
     case CVStep.SelectTemplate:
-      return <div>Select template</div>
+      return (
+        <ChooseTemplateStep
+          onTemplateSelected={() => setCurrentStep(CVStep.OptimizeCV)}
+        />
+      )
+    case CVStep.OptimizeCV:
+      return <OptimiseCVStep />
   }
 }
